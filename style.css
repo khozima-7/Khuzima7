@@ -31,7 +31,7 @@ body {
 .profile-pic-container {
     position: relative;
     z-index: 2;
-    margin-bottom: 25px; /* رفع الصورة للأعلى أكثر */
+    margin-bottom: 70px; /* رفع الصورة للأعلى أكثر */
     background: linear-gradient(135deg, #232526 0%, #414345 100%);
     border-radius: 50%;
     box-shadow: 0 2px 16px rgba(0,0,0,0.25);
@@ -39,7 +39,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 200px; /* إزاحة الصورة لليمين */
+    left: 0px; /* إزاحة الصورة لليمين */
 }
 .profile-pic {
     width: 90px;
