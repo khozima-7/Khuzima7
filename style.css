@@ -30,8 +30,8 @@ body {
 }
 .profile-pic-container {
     position: relative;
-    z-index: 2;
-    margin-bottom: 70px; /* رفع الصورة للأعلى أكثر */
+    z-index: 20;
+    margin: -50px auto 20px auto;
     background: linear-gradient(135deg, #232526 0%, #414345 100%);
     border-radius: 50%;
     box-shadow: 0 2px 16px rgba(0,0,0,0.25);
@@ -39,7 +39,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 0px; /* إزاحة الصورة لليمين */
+    width: max-content;
 }
 .profile-pic {
     width: 90px;
