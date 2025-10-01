@@ -1,0 +1,151 @@
+body {
+    font-family: 'Cairo', Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    color: #f3f3f3;
+}
+/* غلاف وصورة شخصية */
+.cover-container {
+    position: relative;
+    width: 100vw;
+    height: 180px;
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    overflow: hidden;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.cover-img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.profile-pic-container {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 25px; /* رفع الصورة للأعلى أكثر */
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    border-radius: 50%;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 200px; /* إزاحة الصورة لليمين */
+}
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6a82fb;
+    background: #222;
+}
+main {
+    margin-top: 70px;
+    padding: 16px;
+}
+/* أشرطة الخبرة */
+.skills-section {
+    margin-bottom: 32px;
+    text-align: center;
+    background: rgba(44, 44, 54, 0.7);
+    border-radius: 18px;
+    padding: 18px 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.skill-bar {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+    .skill-bar span {
+        min-width: 70px;
+        font-weight: 700;
+        color: #6a82fb;
+        text-shadow: 0 1px 4px #232526;
+    }
+    .bar {
+        width: 60vw;
+        max-width: 320px;
+        height: 14px;
+        background: #232526;
+        border-radius: 7px;
+        overflow: hidden;
+        box-shadow: 0 1px 6px #111;
+    }
+    .progress {
+        height: 100%;
+        width: 0;
+        background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+        border-radius: 7px;
+        transition: width 1.2s cubic-bezier(.4,2,.3,1);
+        box-shadow: 0 1px 8px #6a82fb44;
+    }
+/* أيقونات التواصل */
+.social-section {
+    text-align: center;
+    background: rgba(44, 44, 54, 0.7);
+    border-radius: 18px;
+    padding: 18px 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 12px;
+}
+.icon img {
+    width: 38px;
+    height: 38px;
+    filter: drop-shadow(0 2px 8px #6a82fb88);
+    transition: transform 0.2s;
+    background: #232526;
+    border-radius: 50%;
+    padding: 3px;
+}
+.icon:hover img {
+    transform: scale(1.18) rotate(-6deg);
+    box-shadow: 0 2px 16px #fc5c7d88;
+}
+footer {
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    border-top: 1px solid #333;
+    text-align: center;
+    padding: 18px 8px 12px 8px;
+    font-size: 1.1em;
+    color: #6a82fb;
+    margin-top: 32px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 -2px 12px #111;
+    letter-spacing: 1px;
+}
+@media (max-width: 500px) {
+    .cover-container {
+        height: 120px;
+    }
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+    .bar {
+        width: 80vw;
+        max-width: 220px;
+    }
+    .profile-pic-container {
+        margin-bottom: -30px;
+        padding: 4px;
+    }
+}
